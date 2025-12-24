@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone | Modo Claro/Oscuro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- LOGO que cambiará con el tema -->
+            <div class="logo">
+                <img id="siteLogo" src="assets/hero/logos/logo-dark.png" alt="Logo Spotify" 
+                     data-light="assets/hero/logos/logo-light.png" 
+                     data-dark="assets/hero/logos/logo-dark.png">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="fas fa-compass"></i> Explorar</a></li>
+                <li><a href="#"><i class="fas fa-music"></i> Biblioteca</a></li>
+                <li><a href="#"><i class="fas fa-crown"></i> Premium</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <button class="btn-login">Iniciar sesión</button>
+                <!-- INTERRUPTOR DE TEMA -->
+                <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun" style="display: none;"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL HERO -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tu música, donde sea.</h1>
+                <p class="subtitle">Escucha millones de canciones sin anuncios. Cancela cuando quieras.</p>
+                <p class="highlight">Prueba Premium gratis por 1 mes</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-cta btn-primary">OBTENER SPOTIFY FREE</a>
+                    <a href="#" class="btn-cta btn-secondary">VER PLANES</a>
+                </div>
+                <p class="terms">Sujeto a Términos y Condiciones. Disponible solo para usuarios que no hayan probado Premium.</p>
+            </div>
+            
+            <div class="hero-image">
+                <!-- IMAGEN HERO que cambiará con el tema -->
+                <img id="heroImage" src="assets/hero/hero-dark.jpg" alt="App Spotify en dispositivos" 
+                     data-light="assets/hero/hero-light.jpg" 
+                     data-dark="assets/hero/hero-dark.jpg">
+            </div>
+        </section>
+
+        <!-- SECCIÓN CARACTERÍSTICAS -->
+        <section class="features">
+            <h2>¿Por qué elegir Spotify?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Escucha tu música favorita</h3>
+                    <p>Millones de canciones y podcasts. Sin límites.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Lleva tu música contigo</h3>
+                    <p>Descarga para escuchar sin conexión.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Personalización total</h3>
+                    <p>Crea listas, descubre música nueva con algoritmos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img id="footerLogo" src="assets/logos/logo-dark.png" alt="Logo Spotify" 
+                     data-light="assets/logos/logo-light.png" 
+                     data-dark="assets/logos/logo-dark.png">
+            </div>
+            <p class="footer-text">Proyecto educativo de portafolio | Clon de Spotify con sistema de temas dinámico</p>
+            <p class="footer-note">Implementado con HTML5, CSS3 y JavaScript Vanilla</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
